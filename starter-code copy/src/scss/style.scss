@@ -1,5 +1,6 @@
 body {
   background-color: #FCFCFC;
+  font-family: 'Lato', sans-serif;
 }
 
 .header {
@@ -8,19 +9,50 @@ body {
   text-align: center;
   font-family: 'Lato', sans-serif;
   color: black;
+  font-weight: black;
   .title {
+
     padding-top: 0.7%;
+    h6 {
+      color: grey;
+      font-size: 15px;
+    }
   }
   .intro {
     font-size: 50px;
     padding: 10% 5%;
-    font-family: 'Playfair Display', serif;
+    // font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
+    span {
+      color: #67F1D7;
+    }
   }
 }
 
-.technologies {
-  background-color: #F6F6F6;
-  padding: 20%;
+.portrait {
+  height: 100%;
+  width: 100%;
+}
+
+.skills {
+  // text-align: center;
+  .dev-skills {
+    background-color: #F6F6F6;
+    background-color: #67F1D7;
+    background-color: #FAFAFA;
+    // padding: 0% 0% 40% 0%;
+    color: black;
+  }
+  .other-skills {
+    background-color: #67F1D7;
+    background-color: #F6F6F6;
+    // padding: 0% 0% 40% 0%;
+    color: black;
+  }
+}
+
+.extra-height {
+  height: 400px;
 }
 
 .main {
