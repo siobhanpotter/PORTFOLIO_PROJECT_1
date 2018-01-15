@@ -1,19 +1,34 @@
+body {
+  background-color: #FCFCFC;
+}
+
 .header {
   background-color: white;
-  padding: 20%;
+  // background: linear-gradient(to bottom right, #FFC837, #FFC837);
   text-align: center;
-  h2 {
-    font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  .title {
+    padding-top: 0.7%;
+  }
+  .intro {
+    font-size: 50px;
+    padding: 10% 5%;
+    font-family: 'Playfair Display', serif;
   }
 }
 
+.technologies {
+  background-color: #F6F6F6;
+  padding: 20%;
+}
+
 .main {
-  background-color: grey;
+  background-color: white;
 }
 
 .project1 {
-  background-color: red;
-  background-image: './assets/unjumble.png';
+  background-color: white;
 }
 
 .project2 {
@@ -28,10 +43,22 @@
   background-color: yellow;
 }
 
+.project {
+  padding: 0px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
 .about-me {
-  background-color: pink;
+  background-color: #F6F6F6;
+  padding: 20%;
 }
 
 .contact {
-  background-color: purple;
+  background-color: white;
+  padding: 20%;
 }
