@@ -1,26 +1,37 @@
-// * {
-//   box-sizing: border-box;
-// }
-
-.title {
-  background-color: grey;
-  color: white;
-}
-
-ul {
-  margin: 10px auto;
-  width: 400px;
-  height: 400px;
-  background: blue;
-}
-
-li {
-  width: 98px;
-  margin: 1px;
-  height: 98px;
-  line-height: 98px;
-  background: red;
-  color: white;
+.header {
+  background-color: white;
+  padding: 20%;
   text-align: center;
-  float: left;
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.main {
+  background-color: grey;
+}
+
+.project1 {
+  background-color: red;
+  background-image: './assets/unjumble.png';
+}
+
+.project2 {
+  background-color: blue;
+}
+
+.project3 {
+  background-color: green;
+}
+
+.project4 {
+  background-color: yellow;
+}
+
+.about-me {
+  background-color: pink;
+}
+
+.contact {
+  background-color: purple;
 }

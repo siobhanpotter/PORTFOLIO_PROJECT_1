@@ -3,33 +3,50 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 // Link
 
-
+import './scss/style.scss';
 
 class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>still working</h1>
-        <div className="container">
-          <h1>working</h1>
-          <h1>Siobhan Potter1</h1>
+      <div className="container">
+
+
+
+        <div className="header">
+          <h1>Siobhan Potter</h1>
           <h2>Web Developer</h2>
           <p>Hi! I'm Siobhan, I'm a web developer based in London. Check out my work, find out more about me or get in touch. I'd love to hear from you.</p>
         </div>
-
-        <div>
-          <h1>Projects</h1>
+        <div className="container main">
+          <div>
+            <h1>Projects</h1>
+          </div>
+          <div className="row">
+            <div className="col project1">
+              1 of 2
+            </div>
+            <div className="col project2">
+              2 of 2
+            </div>
+          </div>
+          <div className="row">
+            <div className="col project3">
+              1 of 2
+            </div>
+            <div className="col project4">
+              2 of 2
+            </div>
+          </div>
         </div>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-          <li>Project 4</li>
-        </ul>
 
-        <div>
+
+        <div className="about-me">
           <h1>About Me</h1>
+        </div>
+
+        <div className="contact">
+          <h1>Contact Me</h1>
         </div>
       </div>
 
