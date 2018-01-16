@@ -10,21 +10,29 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
+
+        {/* <div className="box-container">
+          <div className="box">
+            <span className="box__blurb">I'm a Box</span>
+            <span className="rect__blurb">I'm a Rectangle</span>
+          </div>
+        </div> */}
+
         <section className="header">
-          <div className="row logo-section">
-            <div className="col-5"></div>
-            <div className="col-2">
-              <img className="logo" src="./assets/logo2.png"></img>
+          <div className="row logo-section element">
+            <div className="col-4"></div>
+            <div className="col-4 element2">
+              <img className="" id="logo" src="./assets/logo2.png"></img>
             </div>
-            <div className="col-5"></div>
+            <div className="col-4"></div>
             <div className="col-12 container title">
-              <h4>SIOBHAN POTTER</h4>
+              <h4 className="animated fadein">SIOBHAN POTTER</h4>
               <h6>Web Developer | Creative | Music Lover</h6>
             </div>
           </div>
 
           <div className="intro">
-            <p><span>Hi, I'm Siobhan,</span><br/> I'm a web developer based in London.<br/> Check out my work, find out more about me & get in touch.</p>
+            <p className=""><span>Hi, I'm Siobhan,</span><br/> I'm a web developer based in London.<br/> Check out my work, find out more about me & get in touch.</p>
           </div>
         </section>
 
@@ -72,22 +80,34 @@ class App extends React.Component {
 
           <div className="row">
 
-            <div className="col-lg-6 col-sm-12 project4 project">
-              <img className="project-image" src="../assets/music-box.png"></img>
+            <div className="col-lg-6 col-sm-12 project4 project imgHolder item">
+              <img className="project-image item-fade" src="../assets/music-box.png"></img>
             </div>
-            <div className="col-lg-6 col-sm-12 project3 project">
+            <div className="col-lg-6 col-sm-12 project3 project item">
               <img className="project-image" src="../assets/gigly.png"></img>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 col-sm-12 project2 project">
+            <div className="col-lg-6 col-sm-12 project2 project item">
               <img className="project-image" src="../assets/viewr.png"></img>
             </div>
-            <div className="col-lg-6 col-sm-12 project1 project">
+            <div className="col-lg-6 col-sm-12 project1 project item">
               <img className="project-image" src="../assets/unjumble.png"></img>
+              {/* <div className="item-overlay top"></div> */}
             </div>
           </div>
+
+          <a href="#" className="box">
+            <h2><span>Breaking news -</span> hippos are sorta dangerous</h2>
+            <h3>Tonight at nine</h3>
+          </a>
+
         </section>
+        {/* <div className="item">
+          <img src="https://cl.ly/image/0v15321t3W1a/pepsi.jpg" alt="pepsi" width="540" height="548"></img>
+
+          <div className="item-overlay top"></div>
+        </div> */}
 
 
 

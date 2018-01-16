@@ -6,6 +6,7 @@ body {
 
 .header {
   text-align: center;
+
   .tag-line {
     font-size: 15px;
     color: grey;
@@ -15,16 +16,24 @@ body {
     padding-bottom: 100px;
     background-color: grey;
     background-color: #67F1D7;
-    .logo {
+    background-color: #F0F0F0;
+
+    #logo {
       width: 100%;
+      color: #67F1D7;
     }
   }
+
+
+
+
+
 
   background-color: white;
   // background: linear-gradient(to bottom right, #FFC837, #FFC837);
 
   font-family: 'Lato', sans-serif;
-  color: black;
+
   font-weight: black;
   .title {
 
@@ -50,6 +59,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
 
 .skills {
   // text-align: center;
@@ -92,6 +102,58 @@ body {
   background-color: yellow;
 }
 
+/////////////////////////////////////
+// .imgHolder{
+//   display: inline-block;
+//   background: #000;
+//
+// .item-fade{
+//   vertical-align: top;
+//   opacity: 1;
+//   transition: opacity 0.5s;
+//   -webkit-transition: opacity 0.5s;
+// }
+// .item-fade:hover{
+//   opacity: 0.5;
+// }
+// }
+
+////////////////////////////////////
+//zoom
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  width: 540px;
+  background: #000;
+}
+.item img {
+  max-width: 100%;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.5s;
+}
+.item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.6;
+   -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+///////////////////////////////////
+
+
+
+
+
 .project {
   padding: 0px;
 }
@@ -110,4 +172,89 @@ body {
 .contact {
   background-color: white;
   padding: 20%;
+}
+
+//animation
+
+.element {
+  animation: pulse 5s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #F0F0F0;
+  }
+}
+
+// .element2 {
+//   animation: pulse 5s;
+// }
+//
+// @keyframes pulse {
+//   0% {
+//     background-color: #F0F0F0;
+//   }
+//   100% {
+//     background-color: white;
+//   }
+// }
+
+
+html, body {
+  height: 100%;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: '../assets/music-box.png';
+  font-family: 'Lato', sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  // background-color: red;
+  background: '../assets/music-box.png';
+  color: white;
+  box-shadow: 5px 5px 25px #000;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    all 1s;
+  .box__blurb {
+    opacity: 1;
+    transform: translateX(45px);
+    transition:
+      opacity 0.5s 2s,
+      transform 0.5s 0.5s;
+  }
+  .rect__blurb {
+    opacity: 0;
+    transform: translateX(500px);
+    transition:
+      opacity 0.5s 1s,
+      transform 0.5s 1s;
+  }
+  &:hover {
+    width: 300px;
+    background-color: orange;
+    box-shadow: -5px 5px 25px #000;
+    .box__blurb {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    .rect__blurb {
+      opacity: 1;
+      transform: translateX(-100px);
+    }
+  }
 }
