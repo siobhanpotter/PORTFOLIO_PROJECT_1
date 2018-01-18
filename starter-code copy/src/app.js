@@ -49,8 +49,11 @@ class App extends React.Component {
               <h1 className="center container-padding margin">About Me</h1>
               <div className="row">
                 <div className="col-lg-9 col-md-8 col-sm-12 other-skills">
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,   when an unknown printer took a galley of type and scrambled it to make a type   specimen book. It has survived not only five centuries, but also the leap   into electronic typesetting, remaining essentially unchanged. It was   popularised in the 1960s with the release of Letraset sheets containing Lorem   Ipsum passages, and more recently with desktop publishing software like Aldus   PageMaker including versions of Lorem Ipsum.</p>
-                  <p>It is a long established fact that a reader will be distracted by the   readable content of a page when looking at its layout. The point of using   Lorem Ipsum is that it has a more-or-less normal distribution of letters, as   opposed to using 'Content here, content here', making it look like readable   English. Many desktop publishing packages and web page editors now use Lorem   Ipsum as their default model text, and a search for 'lorem ipsum' will   uncover many web sites still in their infancy. Various versions have evolved   over the years, sometimes by accident, sometimes on purpose (injected humour   and the like).</p>
+                  <p>I'm a Web Developer looking to contribute to and learn from a creative team in London. Background in photography and design with technical experience creating and managing content for websites.</p>
+                  <p>In one of my most recent roles I was involved with creating content and managing the website for an art gallery which sparked my interest in learning to code. After learning as a hobby, I was hooked and wanted to take my interest to the next level. I joined General Assembly to take part in their immersive web-development programme.</p>
+                  <p>Over the past three months, I have been learning the fundamentals of development and practicing making MEAN and MERN stack apps. I particularly enjoyed working with front-end technologies such as React, CSS & SCSS and jQuery.</p>
+                  <p>My background in photography and excellent eye for detail and design will give me an edge when it comes to CSS, layout and producing wire frames.</p>
+
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-12 ">
                   <img className="img-responsive portrait" src="../assets/me.jpg"></img>
